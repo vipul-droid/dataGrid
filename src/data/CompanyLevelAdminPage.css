@@ -1,0 +1,93 @@
+.mainDiv{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background: #dfeaf0;
+    /* background: rgb(179, 195, 196); */
+    /* background: linear-gradient(135deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%); */
+}
+
+.sideBarLeft{
+    height:128vh;
+    width: 18%;
+    background: #243140;
+    
+}
+
+.dashBoard{
+    text-align: center;
+    background: #3C5AC6;
+    color: white;
+    height:50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    margin: 10px;
+    margin-right: 5px;
+    margin-left:20px ;
+}
+
+h4{
+    font-size: 22px;
+    margin: 10px;
+}
+
+.restRightBar{
+    /* background: #F1F6F9; */
+    width: 100%;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.companyLevel{
+   margin: 10px;
+   background: white;
+   border-radius: 15px;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+.adminLevel{
+   margin: 10px;
+   background: white;
+   border-radius: 15px;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.Linegraph{
+    width: 70%;
+    margin: 0px;
+    background: white;
+    border-radius: 15px;
+    margin-left: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    /* border: 2px solid black; */
+}
+
+.Linegraph h4{
+    text-align: center;
+}
+
+.recharts-surface{
+    margin-left: 100px;
+}
+
+.graphCard{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    margin: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 70px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

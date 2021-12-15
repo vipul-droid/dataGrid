@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter , Router, Routes, Route, Link } from "react-router-dom";
+import Login from './components/Login';
+import DummyAutoSuggest from './data/DummyAutoSuggest';
+import CompanyDataPage from './data/CompanyDataPage';
+import CompanyLevel from './data/CompanyLevel';
+import AdminLevel from './data/AdminLevel';
+import LineGraph from './data/LineGraph';
+import CompanyLevelAdminPage from './data/CompanyLevelAdminPage';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+        <Routes>
+          <Route  path="/" element={<Login />}/>
+          <Route path="/CompanyDataPage" element={<CompanyDataPage/>} />
+          <Route path="/CompanyLevelAdminPage" element={<CompanyLevelAdminPage/>} />
+      </Routes>
+    </BrowserRouter>
+    // <DummyAutoSuggest/>
+    // <CompanyDataPage/>
+    // <CompanyLevel/>
+    // <AdminLevel/>
+    // <LineGraph/>
+    // <CompanyLevelAdminPage/>
   );
 }
 
